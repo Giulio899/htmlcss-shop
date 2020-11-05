@@ -6,8 +6,16 @@
 
 
 .container {
-  width: 80%;
+  width: 60%;
   height: 800px;
   margin: 20px auto;
   background-color: orange;
+  text-align: center;
+}
+
+.item {
+  width: 32%;
+  height: 300px;
+  background-color: grey;
+  display: inline-block;
 }
