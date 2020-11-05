@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: green;
+}
 
+/* Inizio main */
 .container {
   width: 60%;
   height: 800px;
@@ -13,9 +17,17 @@
   text-align: center;
 }
 
+/* Inizio section */
 .item {
   width: 32%;
   height: 300px;
   background-color: grey;
   display: inline-block;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  /* Avendo specificato sia la larghezza che l'altezza dell'immagine ho usato la proprietà sotto (object-fit) per impedire che l'immagine si deformasse */
+  object-fit: cover;
 }
