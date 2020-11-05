@@ -6,7 +6,8 @@
 
 
 .container {
-  width: 80px;
+  width: 80%;
   height: 800px;
-  background-color: black;
+  margin: 20px auto;
+  background-color: orange;
 }
