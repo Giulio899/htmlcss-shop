@@ -4,17 +4,13 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: pink;
-}
 
 /* Inizio main */
 .container {
   width: 60%;
-  height: 800px;
   margin: 20px auto;
-  background-color: orange;
   text-align: center;
+  /* Il text-align: center; l'ho usato per allineare gli item all'interno del container. */
 }
 
 /* Inizio section */
@@ -48,5 +44,18 @@ body {
 
 .item:nth-child(even) span {
   background-color: red;
+}
 
+.item .heart {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 32px;
+  color: red;
+  display: none;
+  /* Credo che la proprietà text-align: center; me l'abbia ereditata dal .container (riga 17 del CSS) perché il cuoricino lo vedo già al centro. */
+}
+
+.item:hover .heart {
+  display: block;
 }
