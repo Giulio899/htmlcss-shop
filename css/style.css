@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: green;
+  background-color: pink;
 }
 
 /* Inizio main */
@@ -23,6 +23,7 @@ body {
   height: 300px;
   background-color: grey;
   display: inline-block;
+  position: relative;
 }
 
 .item img {
@@ -30,4 +31,22 @@ body {
   height: 100%;
   /* Avendo specificato sia la larghezza che l'altezza dell'immagine ho usato la proprietà sotto (object-fit) per impedire che l'immagine si deformasse */
   object-fit: cover;
+}
+
+.item span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  background-color: green;
+  /* Queste ultime proprietà le ho messe solo per ripassare una cosa vista qualche giorno fa. */
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.item:nth-child(even) span {
+  background-color: red;
+
 }
