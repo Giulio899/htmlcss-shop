@@ -47,15 +47,30 @@
 }
 
 .item .heart {
+  /* metodo con display */
+  display: none;
+
+  /* metodo con z-index
+  z-index: -1; */
+
+  /* metodo con visibility
+  visibility: hidden; */
+
   position: absolute;
   bottom: 0;
   width: 100%;
   font-size: 32px;
   color: red;
-  display: none;
   /* Credo che la proprietà text-align: center; me l'abbia ereditata dal .container (riga 17 del CSS) perché il cuoricino lo vedo già al centro. */
 }
 
 .item:hover .heart {
+  /* metodo con display */
   display: block;
+
+  /* metodo con z-index
+  z-index: 0; */
+
+  /* metodo con visibility
+  visibility: visible; */
 }
